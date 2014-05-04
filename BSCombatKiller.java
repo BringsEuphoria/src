@@ -13,7 +13,6 @@ import org.rev377.min.api.methods.Players;
 import org.rev377.min.api.wrappers.GroundItem;
 import org.rev377.min.api.wrappers.Item;
 import org.rev377.min.api.wrappers.Npc;
-import org.soulsplit.api.wrappers.SceneObject;
 
 
 @ScriptManifest(author = "Daher", category = Category.COMBAT, description = "Kills", name = "CombatKiller 10", servers = { "377" }, version = 0.1)
