@@ -101,9 +101,11 @@ public class BSCombatKiller extends Script{
 
 		@Override
 		public void execute() {
-			
-			q.interact(1);
+			if(q != null){
+			q.interact(0); // Change to 1 if 0 doesn't work.
 			Time.sleep(500);
+			
+			}
 			
 		}
 		
