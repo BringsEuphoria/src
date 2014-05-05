@@ -10,6 +10,7 @@ import org.rev377.min.api.methods.Inventory;
 import org.rev377.min.api.methods.Menu;
 import org.rev377.min.api.methods.Npcs;
 import org.rev377.min.api.methods.Players;
+import org.rev377.min.api.methods.Camera;
 import org.rev377.min.api.wrappers.GroundItem;
 import org.rev377.min.api.wrappers.Item;
 import org.rev377.min.api.wrappers.Npc;
@@ -82,6 +83,7 @@ public class BSCombatKiller extends Script{
 		@Override
 		public void execute() {
 			if(f.distanceTo() < 15){//Checks to be sure item is within 15 tiles
+			Camera.moveRandomly();//Keeps you logged in and doesn't throw the GroundItem Error
 			f.interact(0);
 			Time.sleep(500);
 		}
@@ -102,7 +104,8 @@ public class BSCombatKiller extends Script{
 
 		@Override
 		public void execute() {
-			if(q.distanceTo() < 15 ){ 
+			if(q.distanceTo() < 15 ){ //Checks to be sure item is within 15 tiles
+			Camera.moveRandomly();//Keeps you logged in and doesn't throw the GroundItem Error
 			q.interact(0); // Change to 1 if 0 doesn't work.
 			Time.sleep(500);
 			
