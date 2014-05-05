@@ -81,6 +81,7 @@ public class BSCombatKiller extends Script{
 
 		@Override
 		public void execute() {
+			if(f.distanceTo() < 15){//Checks to be sure item is within 15 tiles
 			f.interact(0);
 			Time.sleep(500);
 		}
@@ -101,7 +102,7 @@ public class BSCombatKiller extends Script{
 
 		@Override
 		public void execute() {
-			if(q != null){
+			if(q.distanceTo() < 15 ){ 
 			q.interact(0); // Change to 1 if 0 doesn't work.
 			Time.sleep(500);
 			
